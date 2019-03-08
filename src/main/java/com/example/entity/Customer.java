@@ -5,6 +5,7 @@
  */
 package com.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -29,12 +30,15 @@ public class Customer implements Serializable {
     private int id;
     
     @Column(name="first_name")
+    @JsonProperty("firstName")
     private String firstName;
     
     @Column(name="last_name")
+    @JsonProperty("firstName")
     private String lastName;
     
     @Column(name="email")
+    @JsonProperty("email")
     private String email;
     
     
